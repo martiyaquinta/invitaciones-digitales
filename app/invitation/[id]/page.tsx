@@ -2,6 +2,7 @@
 
 import { useState, useEffect, use } from "react";
 import Image from "next/image";
+import Link from "next/link";
 import { Heart, Calendar, MapPin, Users, Gift, Download, Copy, Check, Music } from "lucide-react";
 import { Carousel } from 'react-responsive-carousel';
 import 'react-responsive-carousel/lib/styles/carousel.min.css';
@@ -318,11 +319,12 @@ export default function InvitationPage({ params }: { params: Promise<{ id: strin
                 className="rounded-2xl overflow-hidden shadow-2xl"
               >
                 {invitationData.photoUrls.map((url, index) => (
-                  <div key={index} className="h-96 md:h-[600px] bg-gray-200">
-                    <img
+                  <div key={index} className="h-96 md:h-[600px] bg-gray-200 relative">
+                    <Image
                       src={url}
                       alt={`Foto ${index + 1}`}
-                      className="w-full h-full object-cover"
+                      fill
+                      className="object-cover"
                     />
                   </div>
                 ))}
@@ -565,7 +567,7 @@ export default function InvitationPage({ params }: { params: Promise<{ id: strin
         <h3 className="text-3xl font-serif font-bold mb-4">TE ESPERO</h3>
         <p className="text-lg mb-6">{invitationData.names}</p>
         <div className="flex justify-center gap-6 mb-8">
-          <a href="/" className="hover:text-violet-200 transition">Inicio</a>
+          <Link href="/" className="hover:text-violet-200 transition">Inicio</Link>
           <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" className="hover:text-violet-200 transition">Instagram</a>
           <a href="https://wa.me/" target="_blank" rel="noopener noreferrer" className="hover:text-violet-200 transition">WhatsApp</a>
         </div>
