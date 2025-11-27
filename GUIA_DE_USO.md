@@ -194,4 +194,4 @@
 
 ---
 
-¿Necesitas ayuda adicional? Visita nuestra [página de soporte](mailto:soporte@estudionomade.com) o consulta la [documentación técnica](./README.md).
+¿Necesitas ayuda adicional? Visita nuestra [página de soporte](mailto:estudionomade2025@gmail.com) o consulta la [documentación técnica](./README.md).
