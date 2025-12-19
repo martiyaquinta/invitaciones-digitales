@@ -6,6 +6,14 @@ export default function ProyectosPage() {
   const proyectos = [
     {
       id: 1,
+      nombre: "Tarjeta Digital Pili",
+      tipo: "invitación",
+      año: 2025,
+      url: "https://tarjeta-digital-pili.vercel.app/",
+      descripcion: "Tarjeta de cumpleaños digital personalizada"
+    },
+    {
+      id: 2,
       nombre: "Landing Café Boutique",
       tipo: "landing",
       año: 2024,
@@ -13,7 +21,7 @@ export default function ProyectosPage() {
       descripcion: "Landing page minimalista para cafetería especializada"
     },
     {
-      id: 2,
+      id: 3,
       nombre: "Invitación XV Sofía",
       tipo: "invitación",
       año: 2024,
@@ -21,7 +29,7 @@ export default function ProyectosPage() {
       descripcion: "Invitación digital interactiva con RSVP"
     },
     {
-      id: 3,
+      id: 4,
       nombre: "Portfolio Fotógrafo",
       tipo: "web",
       año: 2024,
@@ -29,7 +37,7 @@ export default function ProyectosPage() {
       descripcion: "Sitio web completo con galería y blog"
     },
     {
-      id: 4,
+      id: 5,
       nombre: "Landing Wellness",
       tipo: "landing",
       año: 2023,
@@ -37,7 +45,7 @@ export default function ProyectosPage() {
       descripcion: "Página de servicios de bienestar"
     },
     {
-      id: 5,
+      id: 6,
       nombre: "Boda Ana & Carlos",
       tipo: "invitación",
       año: 2023,
@@ -45,7 +53,7 @@ export default function ProyectosPage() {
       descripcion: "Invitación elegante con contador regresivo"
     },
     {
-      id: 6,
+      id: 7,
       nombre: "E-commerce Artesanías",
       tipo: "web",
       año: 2023,
@@ -104,19 +112,30 @@ export default function ProyectosPage() {
                         </div>
                         
                         {/* Preview del proyecto */}
-                        <div className="p-4 h-full bg-gradient-to-br from-lavanda/10 to-violeta/10">
-                          <div className="bg-white rounded-2xl shadow-lg h-full flex items-center justify-center overflow-hidden">
-                            <div className="text-center p-4">
-                              <div className="w-16 h-16 rounded-full bg-gradient-to-br from-lavanda to-violeta mx-auto mb-3 flex items-center justify-center">
-                                <span className="text-2xl text-white">
-                                  {proyecto.tipo === 'landing' ? '🎯' : 
-                                   proyecto.tipo === 'invitación' ? '💌' : '🌐'}
-                                </span>
+                        <div className="h-full bg-gradient-to-br from-lavanda/10 to-violeta/10">
+                          <div className="bg-white h-full flex items-center justify-center overflow-hidden">
+                            {proyecto.url ? (
+                              // Mostrar iframe si tiene URL
+                              <iframe 
+                                src={proyecto.url}
+                                className="w-full h-full border-0"
+                                title={proyecto.nombre}
+                                loading="lazy"
+                              />
+                            ) : (
+                              // Mostrar placeholder si no tiene URL
+                              <div className="text-center p-4">
+                                <div className="w-16 h-16 rounded-full bg-gradient-to-br from-lavanda to-violeta mx-auto mb-3 flex items-center justify-center">
+                                  <span className="text-2xl text-white">
+                                    {proyecto.tipo === 'landing' ? '🎯' : 
+                                     proyecto.tipo === 'invitación' ? '💌' : '🌐'}
+                                  </span>
+                                </div>
+                                <div className="text-lavanda/40 text-xs mb-2">
+                                  Vista previa
+                                </div>
                               </div>
-                              <div className="text-lavanda/40 text-xs mb-2">
-                                Vista previa
-                              </div>
-                            </div>
+                            )}
                           </div>
                         </div>
                       </div>
