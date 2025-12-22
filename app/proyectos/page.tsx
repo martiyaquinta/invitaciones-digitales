@@ -14,6 +14,14 @@ export default function ProyectosPage() {
     },
     {
       id: 2,
+      nombre: "Cabalgatas GR Turismo",
+      tipo: "landing",
+      año: 2025,
+      url: "https://cabalgatas.grturismoaventura.com/",
+      descripcion: "Landing page para servicios de turismo y cabalgatas"
+    },
+    {
+      id: 3,
       nombre: "Landing Café Boutique",
       tipo: "landing",
       año: 2024,
@@ -22,6 +30,14 @@ export default function ProyectosPage() {
     },
     {
       id: 3,
+      nombre: "Landing Café Boutique",
+      tipo: "landing",
+      año: 2024,
+      imagen: "/placeholder-project.jpg",
+      descripcion: "Landing page minimalista para cafetería especializada"
+    },
+    {
+      id: 4,
       nombre: "Invitación XV Sofía",
       tipo: "invitación",
       año: 2024,
@@ -29,7 +45,7 @@ export default function ProyectosPage() {
       descripcion: "Invitación digital interactiva con RSVP"
     },
     {
-      id: 4,
+      id: 5,
       nombre: "Portfolio Fotógrafo",
       tipo: "web",
       año: 2024,
@@ -37,7 +53,7 @@ export default function ProyectosPage() {
       descripcion: "Sitio web completo con galería y blog"
     },
     {
-      id: 5,
+      id: 6,
       nombre: "Landing Wellness",
       tipo: "landing",
       año: 2023,
@@ -45,7 +61,7 @@ export default function ProyectosPage() {
       descripcion: "Página de servicios de bienestar"
     },
     {
-      id: 6,
+      id: 7,
       nombre: "Boda Ana & Carlos",
       tipo: "invitación",
       año: 2023,
@@ -53,7 +69,7 @@ export default function ProyectosPage() {
       descripcion: "Invitación elegante con contador regresivo"
     },
     {
-      id: 7,
+      id: 8,
       nombre: "E-commerce Artesanías",
       tipo: "web",
       año: 2023,
