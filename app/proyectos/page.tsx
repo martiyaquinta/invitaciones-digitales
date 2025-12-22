@@ -18,7 +18,7 @@ export default function ProyectosPage() {
       tipo: "landing",
       año: 2025,
       url: "https://cabalgatas.grturismoaventura.com/",
-      descripcion: "Landing page para servicios de turismo y cabalgatas"
+      descripcion: "Landing page para GR Turismo Aventura, cabalgatas en Mendoza."
     },
     {
       id: 3,
